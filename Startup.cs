@@ -33,6 +33,9 @@ namespace Microsoft.BotBuilderSamples
             // Create the Bot Framework Adapter with error handling enabled.
             services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
 
+            // Add the named pipe connector to the service collection
+            services.AddNamedPipeConnector();
+
             // Create the storage we'll be using for User and Conversation state. (Memory is great for testing purposes.)
             services.AddSingleton<IStorage, MemoryStorage>();
 
@@ -63,7 +66,7 @@ namespace Microsoft.BotBuilderSamples
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
-
+            app.UseBotFrameworkNamedPipe();
             app.UseMvc();
         }
     }
