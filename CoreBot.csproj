@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="PostDeployScripts\**" />
+    <Content Remove="PostDeployScripts\**" />
+    <EmbeddedResource Remove="PostDeployScripts\**" />
+    <None Remove="PostDeployScripts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.4.4" />
     <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.4.4" />

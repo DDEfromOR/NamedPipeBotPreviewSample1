@@ -1,20 +1,54 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreBot", "CoreBot.csproj", "{0793F52D-82C5-4C6E-967B-606676CF8B17}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder", "..\botbuilder-dotnet\libraries\Microsoft.Bot.Builder\Microsoft.Bot.Builder.csproj", "{F2948ADF-8B73-4CBA-9761-EBF4E592FF07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.StreamingExtensions", "..\botbuilder-dotnet\libraries\Microsoft.Bot.StreamingExtensions\Microsoft.Bot.StreamingExtensions.csproj", "{E24B5799-D8FB-476C-9E97-777481D79AA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.Integration.AspNet.Core", "..\botbuilder-dotnet\libraries\integration\Microsoft.Bot.Builder.Integration.AspNet.Core\Microsoft.Bot.Builder.Integration.AspNet.Core.csproj", "{02F40105-573B-417C-9E63-5624FBB8CD38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.Integration.AspNet.WebApi", "..\botbuilder-dotnet\libraries\integration\Microsoft.Bot.Builder.Integration.AspNet.WebApi\Microsoft.Bot.Builder.Integration.AspNet.WebApi.csproj", "{C05C4C7C-8461-436F-B582-A6A2E8DB10D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - NuGet Packages|Any CPU = Debug - NuGet Packages|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0793F52D-82C5-4C6E-967B-606676CF8B17}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{0793F52D-82C5-4C6E-967B-606676CF8B17}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
 		{0793F52D-82C5-4C6E-967B-606676CF8B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0793F52D-82C5-4C6E-967B-606676CF8B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0793F52D-82C5-4C6E-967B-606676CF8B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0793F52D-82C5-4C6E-967B-606676CF8B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2948ADF-8B73-4CBA-9761-EBF4E592FF07}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug - NuGet Packages|Any CPU
+		{F2948ADF-8B73-4CBA-9761-EBF4E592FF07}.Debug - NuGet Packages|Any CPU.Build.0 = Debug - NuGet Packages|Any CPU
+		{F2948ADF-8B73-4CBA-9761-EBF4E592FF07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2948ADF-8B73-4CBA-9761-EBF4E592FF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2948ADF-8B73-4CBA-9761-EBF4E592FF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2948ADF-8B73-4CBA-9761-EBF4E592FF07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24B5799-D8FB-476C-9E97-777481D79AA3}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24B5799-D8FB-476C-9E97-777481D79AA3}.Debug - NuGet Packages|Any CPU.Build.0 = Debug|Any CPU
+		{E24B5799-D8FB-476C-9E97-777481D79AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24B5799-D8FB-476C-9E97-777481D79AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24B5799-D8FB-476C-9E97-777481D79AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24B5799-D8FB-476C-9E97-777481D79AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F40105-573B-417C-9E63-5624FBB8CD38}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug - NuGet Packages|Any CPU
+		{02F40105-573B-417C-9E63-5624FBB8CD38}.Debug - NuGet Packages|Any CPU.Build.0 = Debug - NuGet Packages|Any CPU
+		{02F40105-573B-417C-9E63-5624FBB8CD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F40105-573B-417C-9E63-5624FBB8CD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F40105-573B-417C-9E63-5624FBB8CD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F40105-573B-417C-9E63-5624FBB8CD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05C4C7C-8461-436F-B582-A6A2E8DB10D8}.Debug - NuGet Packages|Any CPU.ActiveCfg = Debug - NuGet Packages|Any CPU
+		{C05C4C7C-8461-436F-B582-A6A2E8DB10D8}.Debug - NuGet Packages|Any CPU.Build.0 = Debug - NuGet Packages|Any CPU
+		{C05C4C7C-8461-436F-B582-A6A2E8DB10D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05C4C7C-8461-436F-B582-A6A2E8DB10D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05C4C7C-8461-436F-B582-A6A2E8DB10D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05C4C7C-8461-436F-B582-A6A2E8DB10D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
